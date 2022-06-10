@@ -1,0 +1,31 @@
+.sidebar {
+    grid-area: sidebar;
+    padding: 68px 50px 73px 50px;
+  }
+
+  .navbar {
+    margin-top: 70px;
+  }
+  
+  .navbar_item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-width: 180px;
+    margin-bottom: 10px;
+    background: #19C28B;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+ .navbar_icon {
+   width: 40px;
+   display: flex;
+   align-items: center;
+ }
+
+ .navbar_title {
+  font-weight: 500;
+  font-size: 20px;
+ }

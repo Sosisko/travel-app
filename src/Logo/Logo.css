@@ -1,0 +1,16 @@
+.logo_title {
+    position: relative;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+
+.logo_icon {
+    position: absolute;
+    right: -25px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+}

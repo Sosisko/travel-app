@@ -10,3 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #19C28B;
 }
+
+li {
+  list-style-type: none;
+}

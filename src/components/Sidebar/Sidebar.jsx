@@ -1,9 +1,9 @@
-import React from "react";
-import Logo from "../Logo/Logo";
-import { SidebarDate } from "./SidebarData";
-import "./Sidebar.css";
+import React from 'react';
+import Logo from '../Logo/Logo';
+import { SidebarDate } from './SidebarData';
+import './Sidebar.css';
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -13,12 +13,16 @@ const Sidebar = () => {
         <ul className="navbar_items">
           {SidebarDate.map((val, key) => {
             return (
-              <Link to={val.link} style={{ textDecoration: "none" }}>
-                <li className="navbar_item" key={key}>
+              <li>
+                <NavLink  className="navbar_item"
+                  to={val.link}
+                  style={{ textDecoration: 'none' }}
+                  key={key}
+                >
                   <div className="navbar_icon">{val.icon}</div>
                   <div className="navbar_title">{val.title}</div>
-                </li>
-              </Link>
+                </NavLink>
+              </li>
             );
           })}
         </ul>

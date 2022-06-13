@@ -8,7 +8,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 export const SidebarDate = [{
     title: 'Home',
     icon: <CottageIcon />,
-    link: '/home'
+    link: '/'
 },
 {
     title: 'Navigation',

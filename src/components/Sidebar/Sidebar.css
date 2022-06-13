@@ -13,12 +13,16 @@
     padding: 10px;
     min-width: 180px;
     margin-bottom: 10px;
-    background: #19C28B;
-    color: #fff;
     border-radius: 10px;
     font-size: 20px;
+    color: #6E6E6E;
   }
 
+  .navbar_item.active {
+    background: #19C28B;
+    color: #fff;
+    box-shadow: 0 10px 13px rgba(25, 194, 139, 0.2);
+  }
  .navbar_icon {
    width: 40px;
    display: flex;

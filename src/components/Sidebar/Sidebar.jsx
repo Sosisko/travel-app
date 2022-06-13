@@ -3,7 +3,13 @@ import Logo from "../Logo/Logo";
 import { SidebarDate } from "./SidebarData";
 import "./Sidebar.css";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "../Content/Home/Home";
+import Navigation from "../Content/Navigation/Navigation";
+import Сalculate from "../Content/Calculate/Calculate";
+import Calendar from "../Content/Calendar/Calendar";
+import Setting from "../Content/Setting/Setting";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -14,15 +20,24 @@ const Sidebar = () => {
           <ul className="navbar_items">
             {SidebarDate.map((val, key) => {
               return (
-                <li className="navbar_item" key={key} Link to={val.link}>
-                  <div className="navbar_icon">{val.icon}</div>
-                  <div className="navbar_title">{val.title}</div>
-                </li>
+                <Link to={val.link}>
+                  <li className="navbar_item" key={key}>
+                    <div className="navbar_icon">{val.icon}</div>
+                    <div className="navbar_title">{val.title}</div>
+                  </li>
+                </Link>
               );
             })}
           </ul>
         </nav>
-        
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/navigation" element={<Navigation />} />
+          <Route path="/calculate" element={<Сalculate />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/setting" element={<Setting />} />
+        </Routes>
       </Router>
     </div>
   );

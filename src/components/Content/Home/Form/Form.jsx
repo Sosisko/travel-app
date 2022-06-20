@@ -13,13 +13,14 @@ const Form = ({
     setInputCountryText(e.target.value);
   };
 
-  const setInputCityHandler = e => {
+  const setInputCityHandler = e => { //ВОПРОС ДУБЛИРОВАНИЯ
     setInputCityText(e.target.value);
   };
 
   const submitHandler = e => {
     e.preventDefault();
     setInputCountryText('');
+    setInputCityText(''); //ВОПРОС ДУБЛИРОВАНИЯ
     setDayActions([
       ...dayActions,
       { country: inputCountryText },

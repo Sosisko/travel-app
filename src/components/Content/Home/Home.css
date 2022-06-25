@@ -1,0 +1,26 @@
+.home_wrapper {
+    background: rgba(25, 194, 139, 0.05);
+    height: 80%;
+    width: 70%;
+    margin: 52px 0;
+    border-radius: 35px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.home_wrapper h2 {
+    margin-bottom: 20px;
+}
+
+/* .append_trip {
+    width: 60px;
+    height: 60px;
+    background: #19C28B;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+ */

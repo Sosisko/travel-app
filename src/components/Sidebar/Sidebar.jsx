@@ -13,11 +13,11 @@ const Sidebar = () => {
         <ul className="navbar_items">
           {SidebarDate.map((val, key) => {
             return (
-              <li>
+              <li key={key}>
                 <NavLink  className="navbar_item"
                   to={val.link}
                   style={{ textDecoration: 'none' }}
-                  key={key}
+                  
                 >
                   <div className="navbar_icon">{val.icon}</div>
                   <div className="navbar_title">{val.title}</div>

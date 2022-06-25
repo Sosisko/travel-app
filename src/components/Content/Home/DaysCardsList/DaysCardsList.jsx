@@ -5,7 +5,7 @@ const DaysCardsList = ({ dayActions }) => {
   return (
     <>
       {dayActions.map(day => (
-        <DayCard country={day.country} city={day.city}/>
+        <DayCard key={day.id} country={day.country} checkin={day.checkin} checkout={day.checkout}/>
       ))}
     </>
   );

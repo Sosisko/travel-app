@@ -4,7 +4,7 @@
   margin-bottom: 40px;
   display: grid;
   width: 1400px;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   grid-template-areas: 
   'sidebar content';
   grid-template-rows: 1fr;
